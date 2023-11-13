@@ -1,0 +1,86 @@
+<header>
+  <nav class="navbar navbar-expand d-flex justify-content-around">
+    <a href="/"><img src="/assets/img/cat.png" alt="" /></a>
+    <div class="">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="auth/register" data-bs-toggle="modal" data-bs-target="#Login">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="auth/register" data-bs-toggle="modal" data-bs-target="#Register">REGISTRAR</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<div class="modal fade" tabindex="-1" id="Register" aria-labelledby="modalOpenLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalOpenLabe">Cadastre-se</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="form-content" action="/user/create" method="POST">
+          <div class="form-group">
+            <div class="form-group">
+              <label for="name" class="col-form-label" >Usuário</label>
+              <input  name="name" type="text"  class="form-control" id="name" aria- equired="true" />
+            </div>
+
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Email</label>
+              <input name="email"  type="email" class="form-control" id="recipient-name" required="true" />
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="col-form-label">Senha</label>
+              <input name="password" type="password" class="form-control" id="recipient-name" required="true" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="col-form-label">Confirmar Senha</label>
+            <input name="password" type="password" class="form-control" id="recipient-name" required="true" />
+          </div>
+
+          </div>
+          <button type="submit" class="btn-register">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="Login" aria-labelledby="modalOpenLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalOpenLabe">Entrar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="form-content" method="POST">
+          <div class="form-group">
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Email</label>
+              <input name="email" type="email" class="form-control" id="recipient-name" required="true" />
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="col-form-label">Senha</label>
+              <input name="password" type="password" class="form-control" id="recipient-name" required="true" />
+            </div>
+          </div>
+
+          
+          <button type="submit" class="btn-register">Cadastrar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

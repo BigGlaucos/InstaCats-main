@@ -1,0 +1,2 @@
+-- Active: 1690557301658@@127.0.0.1@3306@db_cats
+CREATE DATABASE db_cats;
