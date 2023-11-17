@@ -65,4 +65,9 @@ module.exports = class AuthController {
             return res.render('home');
         }
     }
+
+    static logout(req,res){
+        req.session.destroy();
+        res.redirect('/')
+    }
 };

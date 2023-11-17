@@ -1,3 +1,4 @@
+const { application } = require('express');
 const {Sequelize} = require('sequelize');
 
 const sequelize = new Sequelize('db_cats','aluno_medio','@lunoSenai23.',{
@@ -13,4 +14,5 @@ try {
   console.log(`Error: ${error}`);
 }
 
-module.exports = sequelize
+
+
