@@ -68,6 +68,6 @@ app.get('/', (req, res) => {
 conn
 .sync()
 .then(()=>{
-  app.listen(4000)
+  app.listen(3333)
 })
 .catch((err)=>console.log(err))
