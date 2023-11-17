@@ -1,11 +1,10 @@
-// 1º: importar DataTypes Sequelize
 const {DataTypes} = require('sequelize');
 
 // 2º: Importar arquivo de connect database
 const db = require('../db/conn');
 
 // 3º Estruturar a tabela
-const User = db.define('User', {
+const newUser = db.define('newUser', {
     name: {
         type:DataTypes.STRING,
         allowNull: false,
@@ -20,7 +19,12 @@ const User = db.define('User', {
         type:DataTypes.STRING,
         allowNull: false,
         require: true
+    },
+    re_password: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        require: true
     }
 });
 
-module.exports = User;
+module.exports = newUser;

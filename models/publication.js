@@ -1,12 +1,13 @@
-const { DataTypes } = require('sequelize')
+const {DataTypes} = require('sequelize');
 
-const db = require('../config/conn')
+const db = require('../db/conn');
 
-const Publication = db.define("Publication", {
-    image: {
+const Publication = db.define('Publication', {
+    img:{
         type: DataTypes.STRING,
         allowNull: false,
-        require: true,
+        require: true
     }
-})
-module.exports = Publication
+});
+
+module.exports = Publication;
